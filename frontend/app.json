@@ -3,8 +3,19 @@
     "name": "Moongram",
     "slug": "moongram",
     "version": "1.0.0",
+    "android": {
+      "package": "com.moongram.app"
+    },
+    "ios": {
+      "bundleIdentifier": "com.moongram.app"
+    },
     "plugins": [
       "expo-asset"
-    ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "2a49cf44-03d9-4f25-a675-559c0bebe3cb"
+      }
+    }
   }
 }
