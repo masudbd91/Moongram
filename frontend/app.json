@@ -4,13 +4,24 @@
     "slug": "moongram",
     "version": "1.0.0",
     "android": {
-      "package": "com.moongram.app"
+      "package": "com.moongram.app",
+      "googleServicesFile": "./google-services.json"
     },
     "ios": {
       "bundleIdentifier": "com.moongram.app"
     },
     "plugins": [
-      "expo-asset"
+      "expo-asset",
+      "@react-native-firebase/app",
+      "@react-native-firebase/auth",
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "kotlinVersion": "2.4.20"
+          }
+        }
+      ]
     ],
     "extra": {
       "eas": {
